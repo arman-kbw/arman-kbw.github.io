@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="first-part">
+            <h1>Rechnungswesen</h1>
+            <div class="container">
+                <label for="login-box"></label>
+                <div class="login">
+                    <input type="text" class="login-box" placeholder="Name eingeben" value=""><br>
+                    <img class="err-img" src="./Images/close.png">
+                </div>
+                <input type="submit" class="login-btn" value="Eingabe">
+            </div>
+        </div>  
+        <div class="secound-part">
+            <h1 class="greeting">Howdy</h1>
+            <p class="p-small">Das italienische Restaurent Castello rechnet die Mehrwertsteuer mit einem 
+                Saldosteuertsatz von 3,5% ab.
+            </p>
+            <p class="p-small">Über das vergangene Geschäftsjahr 2022 sind folgende Grössen (alle inkl. MWST) bekannt:</p>
+            <table>
+                <tr>
+                    <td class="heading">Betriebsertrag aus Lieferung und Leistung</td>
+                    <td>152 900</td>
+                </tr>
+                <tr>
+                    <td class="heading">Zahlung für Material, Waren und Drittleistung</td>
+                    <td>45 000</td>
+                </tr>
+                <tr>
+                    <td class="heading">Zahlung für Personalaufwand</td>
+                    <td>38 262</td>
+                </tr>
+                <tr>
+                    <td class="heading">Zahlung für Raumaufwand</td>
+                    <td>29 800</td>
+                </tr>
+                <tr>
+                    <td class="heading">Zahlung für Unterhalt, Reparaturen, Ersatz, Leasing</td>
+                    <td>11 650</td>
+                </tr>
+                <tr>
+                    <td class="heading">Rechnung für Verwaltungs- und Informatikaufwand</td>
+                    <td>3 000</td>
+                </tr>
+                <tr>
+                    <td class="heading">Rechnung für Energieverbrauch</td>
+                    <td>5 000</td>
+                </tr>
+                <tr>
+                    <td class="heading">Bankbelastung für Zinsen</td>
+                    <td>5 289</td>
+                </tr>
+                <tr>
+                    <td class="heading">Abschreibungen</td>
+                    <td>4 250</td>
+                </tr>
+            </table>
+            <div class="text">
+                <div class="aufgabe1">
+                    <p class="p-left">a) Wie gross ist die abzulieferne MWST im Geschäftsjahr 2022 (auf fünf Rappen runden)?</p>
+                    <input type="text" class="first-answer" id="user-answer" placeholder="deine Lösung"><br>
+                    <button id="check-btn1" class="check-btn">Antwort überprüfen</button>
+                    <button id="answer-btn1" class="answer-btn">Lösung anzeigen</button>
+                </div>
+                <div class="aufgabe2">
+                    <p class="p-left">b) Wie hoch wäre die zu entrichtende MWST mit der effektiven Abrechnungsmethode gewesen? (auf fünf Rappen runden)?</p>
+                    <input type="text" class="secound-answer" id="user-answer" placeholder="deine Lösung"><br>
+                    <button id="check-btn2" class="check-btn">Antwort überprüfen</button>
+                    <button id="answer-btn2" class="answer-btn">Lösung anzeigen</button>
+                </div>
+                <div class="aufgabe3">
+                    <p class="p-left">c) Bei welchem Personalaufwand kann Castello gerade noch schwarze Zahlen schreiben (Abrechnung nach effektiver Methode. auf fünf Rappen runden)?</p>
+                    <input type="text" class="third-answer" id="user-answer" placeholder="deine Lösung"><br>
+                    <button id="check-btn3" class="check-btn">Antwort überprüfen</button>
+                    <button id="answer-btn3" class="answer-btn">Lösung anzeigen</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
